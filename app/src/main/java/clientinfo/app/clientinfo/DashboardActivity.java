@@ -85,7 +85,7 @@ public class DashboardActivity extends AppCompatActivity  implements View.OnClic
                     return;
                 }
                 String uri = "tel:" + Constants.PHONE;
-                Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
+                Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(uri));
                 startActivity(callIntent);
             } catch (Exception e)
             {

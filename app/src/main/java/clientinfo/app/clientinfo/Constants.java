@@ -20,4 +20,7 @@ public class Constants
     //Address latitude, longitude
     public static String MAP_LOCATION = "http://maps.google.com/maps?daddr=16.685195, 74.238018";
 
+    //Splash Screen Time
+    public static int SPLASH_TIME = 1400;
+
 }

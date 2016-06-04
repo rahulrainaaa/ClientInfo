@@ -1,6 +1,5 @@
 package clientinfo.app.clientinfo;
 
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.util.Linkify;
@@ -29,7 +28,6 @@ public class AddressActivity extends AppCompatActivity {
         phone.setTextIsSelectable(true);
         mobile.setTextIsSelectable(true);
         email.setTextIsSelectable(true);
-
 
         Linkify.addLinks(mobile, Linkify.WEB_URLS | Linkify.PHONE_NUMBERS);
         Linkify.addLinks(phone, Linkify.WEB_URLS | Linkify.PHONE_NUMBERS);
