@@ -96,7 +96,7 @@ public class DashboardActivity extends AppCompatActivity  implements View.OnClic
         {
             Intent i = new Intent(Intent.ACTION_SEND);
             i.setType("text/plain");
-            i.putExtra(Intent.EXTRA_EMAIL  , new String[]{Constants.MAIL});
+            i.putExtra(Intent.EXTRA_EMAIL  , new String[]{Constants.EMAIL});
             i.putExtra(Intent.EXTRA_SUBJECT, "");
             i.putExtra(Intent.EXTRA_TEXT   , "");
             try
@@ -115,7 +115,7 @@ public class DashboardActivity extends AppCompatActivity  implements View.OnClic
         {
             try
             {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.WEB_CLIENT));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.APPOINTMENT));
                 startActivity(browserIntent);
             } catch (Exception e)
             {
@@ -136,8 +136,7 @@ public class DashboardActivity extends AppCompatActivity  implements View.OnClic
         }
         else if(v.getId() == R.id.id_maps)
         {
-            Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                    Uri.parse("http://maps.google.com/maps?daddr=" + Constants.ADDRESS_LAT_LONG));
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(Constants.MAP_LOCATION));
             startActivity(intent);
         }
 
